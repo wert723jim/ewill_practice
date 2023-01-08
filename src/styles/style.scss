@@ -1,2 +1,14 @@
 @import './normalize';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Noto+Sans+TC:wght@300;500;700&display=swap');
 
+* {
+  font-family: 'Noto Sans TC';
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}

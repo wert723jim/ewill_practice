@@ -6,13 +6,49 @@
           <p>There is no one</p>
           <p>who loves pain</p>
         </div>
-        <div class="announcement__btn">
-          <button>
+        <div class="announcement__btn__wrapper">
+          <button class="announcement__btn">
             FORM
           </button>
         </div>
         <div class="announcement__content">
-
+          <div class="announcement__content__paragraph">
+            <div class="announcement__content__paragraph__title">
+              <img src="../assets/img/titleTurtle.png" alt="">
+              Paragraph
+              <img src="../assets/img/titleTurtle.png" alt="">
+            </div>
+            <div class="announcement__content__paragraph__list">
+              <ol>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="announcement__content__paragraph">
+            <div class="announcement__content__paragraph__title">
+              <img src="../assets/img/titleTurtle.png" alt="">
+              Paragraph
+              <img src="../assets/img/titleTurtle.png" alt="">
+            </div>
+            <div class="announcement__content__paragraph__list">
+              <ol>
+                <li>
+                  Quisque sodales leo <span class="underline bold">vitae vulputate auctor.</span>
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Donec ultrices sapien <span class="bold">vitae leo venenatis ullamcorper.</span>
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </section>
