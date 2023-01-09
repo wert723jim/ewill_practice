@@ -6,13 +6,7 @@
         <img src="./assets/img/separateWave.png" alt="">
       </div>
     </div>
-    <section class="form">
-      <div class="form__container">
-        <div class="form__title"></div>
-        <div class="form__content"></div>
-        <div class="form__btn"></div>
-      </div>
-    </section>
+    <Form />
     <section class="achievement">
       <div class="achievement__container">
         <div class="achievement__list">
@@ -51,19 +45,21 @@
 
 <script>
 import Announcement from './components/Announcement.vue'
+import Form from './components/Form.vue'
 
 export default {
   name: 'App',
   components: {
     Announcement,
+    Form
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .separateWave__img {
-    display: flex;
     width: 100%;
+    background: $primaryColor4;
   }
 </style>
 
