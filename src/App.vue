@@ -2,6 +2,9 @@
   <div id="app">
     <Announcement />
     <div class="separateWave">
+      <div class="separateWave__img">
+        <img src="./assets/img/separateWave.png" alt="">
+      </div>
     </div>
     <section class="form">
       <div class="form__container">
@@ -47,7 +50,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Announcement from './components/Announcement.vue'
 
 export default {
@@ -57,5 +59,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .separateWave__img {
+    display: flex;
+    width: 100%;
+  }
+</style>
 
 
