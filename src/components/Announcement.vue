@@ -7,9 +7,13 @@
           <p>who loves pain</p>
         </div>
         <div class="announcement__btn__wrapper">
-          <button class="announcement__btn">
-            FORM
-          </button>
+          
+            <a href="#form" class="announcement__btn">
+              <span>
+                FORM
+              </span>
+            </a>
+          
         </div>
         <div class="announcement__content">
           <div class="announcement__content__paragraph">

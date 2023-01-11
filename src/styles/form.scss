@@ -8,7 +8,8 @@
   background: transparent;
 
   &:focus {
-    outline: none;
+    border: none;
+    outline: 3px solid #93BBF9;
   }
 }
 
@@ -74,13 +75,39 @@
         }
       }
 
-      input, select {
+      &--warning {
+        font-size: 12px;
+        color: red;
+      }
+
+      &__input {
         @extend %input;
       }
 
       &__selectWrapper {
         z-index: 1;
         position: relative;
+        
+        &__vselect {
+          height: 57px;
+          border: 1px solid $primaryColor1;
+          border-radius: 20px;
+
+          #vselect__stores.v-select {
+            margin: 12px 0;
+          }
+
+          // increase specificity, style can't be scoped
+          #vselect__stores #vs1__combobox.vs__dropdown-toggle {
+            border: none;
+            background: transparent;
+          }
+
+          // dropdown arrow
+          .vs__actions {
+            display: none;
+          }
+        }
 
         .select__dropDown {
           z-index: -1;
