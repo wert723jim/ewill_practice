@@ -1,23 +1,13 @@
 <template>
   <div id="app">
     <Announcement />
-    <div class="separateWave">
+    <!-- <div class="separateWave">
       <div class="separateWave__img">
         <img src="./assets/img/separateWave.png" alt="">
       </div>
-    </div>
+    </div> -->
     <Form />
-    <section class="achievement">
-      <div class="achievement__container">
-        <div class="achievement__list">
-          <div class="achievement__list__item">
-            <div class="achievement__list__item__rank"></div>
-            <div class="achievement__list__item__one"></div>
-            <div class="achievement__list__item__name"></div>   
-          </div>
-        </div>
-      </div>
-    </section>
+    <Lottery />
     <section class="lighthouse">
       <div class="lighthouse__container">
         <div class="lighthouse__content"></div>
@@ -46,12 +36,14 @@
 <script>
 import Announcement from './components/Announcement.vue'
 import Form from './components/Form.vue'
+import Lottery from './components/lottery.vue'
 
 export default {
   name: 'App',
   components: {
     Announcement,
-    Form
+    Form,
+    Lottery
   }
 }
 </script>
