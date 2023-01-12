@@ -3,8 +3,8 @@
     <section class="announcement">
       <div class="announcement__container">
         <div class="announcement__title">
-          <p>There is no one</p>
-          <p>who loves pain</p>
+          <p class="announcement__title__first">There is no one</p>
+          <p class="announcement__title__second">who loves pain</p>
         </div>
         <div class="announcement__btn__wrapper">
           
