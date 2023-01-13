@@ -56,7 +56,7 @@ export default {
     }
 
     &__title {
-      width: 80%;
+      width: 376px;
       margin: 0 auto;
       margin-bottom: 24px;
       
