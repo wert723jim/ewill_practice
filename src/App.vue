@@ -8,28 +8,15 @@
     </div> -->
     <Form />
     <Lottery />
-    <section class="lighthouse">
-      <div class="lighthouse__container">
-        <div class="lighthouse__content"></div>
-        <div class="lighthouse__img"></div>
-      </div>
-    </section>
-    <section class="store">
-      <div class="store__container">
-        <div class="store__header"></div>
-        <div class="store__appearance">
-          <div class="store__appearance__decor">
-            <div class="store__appearance__decor__roof"></div>
-            <div class="store__appearance__decor__glass">
-              <div class="store__appearance__decor__glass__title"></div>
-              <div class="store__appearance__decor__glass__list"></div>
-              <div class="store__appearance__decor__glass__image"></div>
-              <div class="store__appearance__decor__glass__slide"></div>
-            </div>
-          </div>
+    <Lighthouse />
+    <div class="market">
+      <div class="market__container">
+        <div class="market__title">
+          <p>Neque porro quisquam est qui dolorem!</p>
         </div>
+        <img src="./assets/img/market.svg" alt="">
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -37,13 +24,15 @@
 import Announcement from './components/Announcement.vue'
 import Form from './components/Form.vue'
 import Lottery from './components/lottery.vue'
+import Lighthouse from './components/lighthouse.vue'
 
 export default {
   name: 'App',
   components: {
     Announcement,
     Form,
-    Lottery
+    Lottery,
+    Lighthouse
   }
 }
 </script>
@@ -52,6 +41,32 @@ export default {
   .separateWave__img {
     width: 100%;
     background: $primaryColor4;
+  }
+
+  .market {
+    background: $primaryColor4;
+
+    &__container {
+      background: $primaryColor1;
+      padding: 40px 55.5px;
+      text-align: center;
+      border-radius: 50px 50px 0 0;
+    
+    }
+
+    &__title {
+      // margin: 0 auto;
+      // width: 303px;
+      margin-bottom: 24px;
+      
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 200%;
+        letter-spacing: .2em;
+      }
+    }
   }
 </style>
 

@@ -1,0 +1,65 @@
+.lighthouse {
+  background: $primaryColor4;
+  padding: 40px 0;
+
+  &__container {
+    width: 274px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    height: 84px;
+    margin-bottom: 20px;
+    
+    &__slash {
+
+      &.left {
+        transform: rotateZ(-15deg);
+      }
+      
+      &.right {
+        transform: rotateZ(15deg);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        background: $primaryColor1;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 216px;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+
+      &__title {
+        color: $primaryColor2;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      &__word {
+        color: $primaryColor1;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    
+  }
+
+  &__img {
+    text-align: center;
+  }
+}
