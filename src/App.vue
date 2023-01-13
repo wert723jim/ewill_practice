@@ -14,7 +14,9 @@
         <div class="market__title">
           <p>Neque porro quisquam est qui dolorem!</p>
         </div>
-        <img src="./assets/img/market.svg" alt="">
+        <div class="market__img">
+          <img src="./assets/img/market.svg" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -48,15 +50,14 @@ export default {
 
     &__container {
       background: $primaryColor1;
-      padding: 40px 55.5px;
+      padding: 40px 0;
       text-align: center;
       border-radius: 50px 50px 0 0;
-    
     }
 
     &__title {
-      // margin: 0 auto;
-      // width: 303px;
+      width: 80%;
+      margin: 0 auto;
       margin-bottom: 24px;
       
       p {
