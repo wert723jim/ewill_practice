@@ -3,7 +3,9 @@
   padding: 64px 21px 49px 21px;
 
   &__container {
-    width: 366px;
+    display: flex;
+    justify-content: center;
+    max-width: 720px;
     margin: 0 auto;
   }
   
@@ -11,6 +13,10 @@
     display: grid;
     grid-template-columns: repeat(2, 178px);
     grid-gap: 41px 16px;
+  
+    @include pad {
+      grid-template-columns: repeat(3, 178px);
+    }
 
     &__item {
       position: relative;

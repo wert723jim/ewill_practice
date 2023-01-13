@@ -27,6 +27,12 @@
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0px 1px 20px rgba(73, 72, 72, .25);
+    @include pad{
+      width: 720px;
+    }
+    @include pc{
+      width: 808px;
+    }
   }
 
   &__title {

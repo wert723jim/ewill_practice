@@ -54,23 +54,56 @@
     border-radius: 20px;
     padding: 24px 16px 0 16px;
     background: $primaryColor3;
+    @include pad{
+      width: 768px;
+    }
+
+    @include pc{
+      width: 808px;
+    }
 
     &__supImg {
       position: absolute;
       top: -25px;
       right: -12px;
+      @include pad{
+        right: 25px;
+        top: -32px;
+      }
+
+      @include pc{
+        right: 16px;
+        top: -30px;
+      }
     }
 
     &__supImg2 {
       position: absolute;
       left: 9px;
       bottom: -41.9px;
+      transform: rotate(-8.53deg);
+      @include pad{
+        left: 43px;
+        bottom: -48.09px;
+      }
+      @include pc{
+        left: 38px;
+        bottom: -49.09px;
+      }
     }
 
     &__firework {
       position: absolute;
       left: -18px;
       bottom: -44px;
+      @include pad{
+        left: 16px;
+        bottom: -51px;
+      }
+      @include pc{
+        left: 16px;
+        bottom: -46.8px;
+      }
     }
 
     &__paragraph {

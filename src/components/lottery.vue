@@ -18,9 +18,13 @@
 
           <div class="lottery__list__item certificateD">
             <div class="lottery__list__item__rank">
+              <img src="../assets/img/certificateD.svg" alt="" class="lottery__list__item__rank__img">
+              <span class="lottery__list__item__rank__level">E</span>
             </div>
-            <div class="lottery__list__item__one"></div>
-            <div class="lottery__list__item__name"></div>   
+            <div class="lottery__list__item__one">TEN</div>
+            <div class="lottery__list__item__name">
+              <span>dehumidifier</span> 
+            </div>   
           </div>
 
           <div class="lottery__list__item">

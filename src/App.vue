@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <Announcement />
-    <!-- <div class="separateWave">
+    <div class="separateWave">
       <div class="separateWave__img">
-        <img src="./assets/img/separateWave.png" alt="">
+        <img src="./assets/img/separateWave.svg" alt="">
       </div>
-    </div> -->
+    </div>
     <Form />
     <Lottery />
     <Lighthouse />
@@ -43,6 +43,10 @@ export default {
   .separateWave__img {
     width: 100%;
     background: $primaryColor4;
+
+    img {
+      width: 100%;
+    }
   }
 
   .market {
