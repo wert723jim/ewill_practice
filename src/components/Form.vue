@@ -103,9 +103,23 @@
         <button 
           type="submit"
           form="a-form"
+          :disabled="status==='loading'"
+          :class="{success: status==='success', failure: status==='failure'}"
+          class="success"
         >
-          submit
+        <div class="form__btn--success" v-if="status==='success'">
+          <img src="../assets/img/success_btn.svg">
+          <span class="success">success</span>
+        </div>
+
+        <div class="form__btn--failure" v-else-if="status==='failure'">
+          <img src="../assets/img/fail_btn.png">
+          <span class="failure">failure</span>
+        </div>
+
+          <span v-else>submit</span>
         </button>
+        <p class="warning" v-if="status==='failure'">This person does not exist</p>
       </div>
     </section>
   </div>
@@ -117,6 +131,7 @@ import vSelect from "vue-select";
 export default {
   data() {
     return {
+      // v-select列表資料
       stores: [
         "store1",
         "store2"
@@ -128,6 +143,8 @@ export default {
       payment: "",
       // 錯誤旗標
       missing: "",
+      // 按鈕狀態旗標
+      status:""
     }
   },
   components: {
@@ -135,7 +152,7 @@ export default {
   },
   methods: {
     handleSubmit(e) {
-
+      
       // 檢查是否有未填欄位
       if( !this.store ) {
         this.missing = "store"
@@ -197,15 +214,18 @@ export default {
         return
       }
       // 是否為正數
-      if (Number(amount) ) {
+      if (Number(amount) < 0) {
         this.missing = 'negative'
         return
       }
 
 
-      // 清空 missing 旗標
+      // 驗證完後，清空 missing 旗標
       this.missing = ""
 
+      // 點擊按鈕後，避免重複點擊，等待資料送出
+      this.status = "loading"
+      
       //處理 form 欄位資料
       const form = e.target
       const formData = new FormData(form)
@@ -214,6 +234,13 @@ export default {
       for(let [name, value] of formData.entries()) {
         console.log(name + ': ' + value)
       }
+
+      setTimeout(() => {
+        // 
+        this.status = "failure"
+        // this.status = "success"
+      }, 5000);
+      
     }
   }
 }

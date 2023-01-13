@@ -9,6 +9,7 @@
               <span class="lottery__list__item__rank__level">A</span>
             </div>
             <div class="lottery__list__item__one">
+              ONE
             </div>
             <div class="lottery__list__item__name ">
               <span>dehumidifier</span>  
@@ -18,6 +19,30 @@
           <div class="lottery__list__item certificateD">
             <div class="lottery__list__item__rank">
             </div>
+            <div class="lottery__list__item__one"></div>
+            <div class="lottery__list__item__name"></div>   
+          </div>
+
+          <div class="lottery__list__item">
+            <div class="lottery__list__item__rank"></div>
+            <div class="lottery__list__item__one"></div>
+            <div class="lottery__list__item__name"></div>   
+          </div>
+
+          <div class="lottery__list__item">
+            <div class="lottery__list__item__rank"></div>
+            <div class="lottery__list__item__one"></div>
+            <div class="lottery__list__item__name"></div>   
+          </div>
+
+          <div class="lottery__list__item">
+            <div class="lottery__list__item__rank"></div>
+            <div class="lottery__list__item__one"></div>
+            <div class="lottery__list__item__name"></div>   
+          </div>
+
+          <div class="lottery__list__item">
+            <div class="lottery__list__item__rank"></div>
             <div class="lottery__list__item__one"></div>
             <div class="lottery__list__item__name"></div>   
           </div>
