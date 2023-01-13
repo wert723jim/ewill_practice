@@ -1,9 +1,9 @@
 .announcement {
   // display: flex;
   background: $primaryColor1;
-  height: 793px;
+  // height: 793px;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0 44px 0;
 
   &__title {
     
@@ -47,13 +47,31 @@
   }
 
   &__content {
+    position: relative;
     margin: 0 auto;
     width: 366px;
-    // height: 489px;
     border: 2px solid $primaryColor2;
     border-radius: 20px;
     padding: 24px 16px 0 16px;
     background: $primaryColor3;
+
+    &__supImg {
+      position: absolute;
+      top: -25px;
+      right: -12px;
+    }
+
+    &__supImg2 {
+      position: absolute;
+      left: 9px;
+      bottom: -41.9px;
+    }
+
+    &__firework {
+      position: absolute;
+      left: -18px;
+      bottom: -44px;
+    }
 
     &__paragraph {
       margin-bottom: 24px;

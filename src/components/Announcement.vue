@@ -16,6 +16,19 @@
           
         </div>
         <div class="announcement__content">
+
+          <div class="announcement__content__supImg">
+            <img src="../assets/img/sup.svg" alt="">
+          </div>
+
+          <div class="announcement__content__supImg2">
+            <img src="../assets/img/sup2.svg" alt="">
+          </div>
+
+          <div class="announcement__content__firework">
+            <img src="../assets/img/firework.svg" alt="">
+          </div>
+
           <div class="announcement__content__paragraph">
             <div class="announcement__content__paragraph__title">
               <img src="../assets/img/titleTurtle.png" alt="">
